@@ -28,42 +28,70 @@ export default function ComingSoon() {
       </main>
 
       {/* Footer */}
-     <footer className="footer">
-  {/* Top Row */}
-  <div className="footer-top">
-    <div className="footer-links">
-      <a href="#">Home</a>
-      <a href="#">Story</a>
-      <a href="#">Career</a>
-      <a href="#">Partner With Us</a>
-      <a href="#">Contact Us</a>
-      <a href="#">Patent & Trademark</a>
-    </div>
-    <div className="social-icons">
-      <FaYoutube />
-      <FaLinkedin />
-      <RxCross2 />
-      <FaInstagram />
-    </div>
-  </div>
+      <footer className="footer">
+        {/* Top Row */}
+        <div className="footer-top">
+          <div className="footer-links">
+            <a href="/">Home</a>
+            <a href="/story">Story</a>
+            <a href="/career">Career</a>
+            <a href="/partner">Partner With Us</a>
+            <a href="/contact">Contact Us</a>
+            <a href="/patent-trademark">Patent & Trademark</a>
+          </div>
+          <div className="social-icons">
+            <a
+              href="https://www.youtube.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="YouTube"
+            >
+              <FaYoutube />
+            </a>
+            <a
+              href="https://www.linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+            >
+              <FaLinkedin />
+            </a>
+            <button
+              type="button"
+              className="icon-button"
+              aria-label="Close"
+            >
+              <RxCross2 />
+            </button>
+            <a
+              href="https://www.instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+            >
+              <FaInstagram />
+            </a>
+          </div>
+        </div>
 
-  {/* Bottom Row */}
-  <div className="footer-bottom">
-    <div className="small-links">
-      <a href="#">Privacy Policy</a>
-      <span>•</span>
-      <a href="#">Terms & Conditions</a>
-      <span>•</span>
-      <a href="#">Refund Policy</a>
-      <span>•</span>
-      <a href="#">Press or Media</a>
-      <span>•</span>
-      <a href="#">Help & Support</a>
-    </div>
-    <p className="copyright">Copyright © Soaron All Right Reserved</p>
-  </div>
-</footer>
-
+        {/* Bottom Row */}
+        <div className="footer-bottom">
+          <div className="small-links">
+            <a href="/privacy-policy">Privacy Policy</a>
+            <span>•</span>
+            <a href="/terms">Terms & Conditions</a>
+            <span>•</span>
+            <a href="/refund-policy">Refund Policy</a>
+            <span>•</span>
+            <a href="/press">Press or Media</a>
+            <span>•</span>
+            <a href="/help">Help & Support</a>
+          </div>
+          <p className="copyright">
+            Copyright © Soaron All Rights Reserved
+          </p>
+        </div>
+      </footer>
     </div>
   );
 }
