@@ -19,7 +19,7 @@ export default function ComingSoon() {
       {/* Main Content */}
       <main className="main-content">
         <img
-          src="https://cdn-icons-png.flaticon.com/512/3940/3940056.png"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRyUoJ34RPWAHd8B7Zo9ogzvb4RkmU1mzuOQ&s"
           alt="Rocket"
           className="rocket-img"
         />
