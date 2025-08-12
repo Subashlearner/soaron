@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/soaron/static/css/main.1977c290.css",
+    "main.js": "/soaron/static/js/main.fd41445f.js",
+    "static/js/453.82644217.chunk.js": "/soaron/static/js/453.82644217.chunk.js",
+    "index.html": "/soaron/index.html",
+    "main.1977c290.css.map": "/soaron/static/css/main.1977c290.css.map",
+    "main.fd41445f.js.map": "/soaron/static/js/main.fd41445f.js.map",
+    "453.82644217.chunk.js.map": "/soaron/static/js/453.82644217.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1977c290.css",
+    "static/js/main.fd41445f.js"
+  ]
+}
