@@ -13,8 +13,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 18px 32px;
-  border-bottom: 1px solid #2c2c2c;
+  padding: 0px 32px;
+  border-bottom: 1px solid white;
 }
 
 .logo {
@@ -53,26 +53,28 @@
 
 .rocket-img {
   width: 110px;
-  margin-bottom: 22px;
+  margin-bottom: 14px;
 }
 
 .main-title {
   font-size: 32px;
   font-weight: bold;
   letter-spacing: 1px;
-  margin-bottom: 10px;
+  margin-bottom: 1px;
 }
 
 .subtitle {
-  color: #a0a0a0;
+  color: white;
   font-size: 16px;
+   margin-top: 0; 
 }
+
 /* Footer */
 .footer {
-  border-top: 1px solid #2c2c2c;
-  padding: 20px 40px;
+  border-top: 1px solid white;
+  padding: 20px 180px;
   font-size: 14px;
-  color: #b3b3b3;
+  color: white;
 }
 
 .footer-top {
@@ -81,16 +83,16 @@
   align-items: center;
   flex-wrap: wrap;
   padding-bottom: 8px;
-  border-bottom: 1px solid #2c2c2c;
+  border-bottom: 1px solid white;
 }
 
 .footer-links {
   display: flex;
-  gap: 20px;
+  gap: 40px;
 }
 
 .footer-links a {
-  color: #b3b3b3;
+  color: white;
   text-decoration: none;
 }
 
@@ -98,16 +100,44 @@
   color: #fff;
 }
 
+/* Social Icons */
 .social-icons {
   display: flex;
-  gap: 15px;
-  font-size: 20px;
+  gap: 10px;
+  align-items: center;
 }
 
-.social-icons svg {
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  background: none;
+  color: white;
+  border: none;
+  padding: 0;
   cursor: pointer;
 }
 
+.icon:hover {
+  color: #ccc;
+}
+
+.youtube-icon,
+.linkedin-icon,
+.twitter-icon
+{
+  background: none !important;
+  border-radius: 0;
+}
+.twitter-icon svg {
+  color: white;
+  stroke: white;
+  stroke-width: 30px;
+}
+/* Instagram outlined with white background */
+
+/* Footer bottom */
 .footer-bottom {
   display: flex;
   justify-content: space-between;
@@ -117,12 +147,12 @@
 
 .small-links {
   display: flex;
-  gap: 10px;
+  gap: 20px;
   flex-wrap: wrap;
 }
 
 .small-links a {
-  color: #b3b3b3;
+  color: white;
   text-decoration: none;
 }
 
@@ -131,10 +161,155 @@
 }
 
 .small-links span {
-  color: #888;
+  color: white;
 }
 
 .copyright {
   font-size: 13px;
-  color: #777;
+  color: white;
+}
+/* ========== Responsive Styles ========== */
+
+/* Small phones (portrait, under 480px) */
+@media (max-width: 480px) {
+  .header {
+    flex-direction: column;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .logo {
+    font-size: 22px;
+  }
+
+  .menu-btn {
+    margin-top: 6px;
+    font-size: 14px;
+  }
+
+  .rocket-img {
+    width: 80px;
+    margin-bottom: 10px;
+  }
+
+  .main-title {
+    font-size: 22px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+  }
+
+  .footer {
+    padding: 15px;
+    text-align: center;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-links {
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
+}
+
+/* Small tablets & large phones (481px - 768px) */
+@media (max-width: 768px) {
+  .header {
+    padding: 12px 20px;
+  }
+
+  .logo {
+    font-size: 24px;
+  }
+
+  .rocket-img {
+    width: 90px;
+  }
+
+  .main-title {
+    font-size: 26px;
+  }
+
+  .subtitle {
+    font-size: 15px;
+  }
+
+  .footer {
+    padding: 20px;
+  }
+
+  .footer-links {
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .small-links {
+    gap: 10px;
+    justify-content: center;
+  }
+}
+
+/* Tablets & small laptops (769px - 1024px) */
+@media (max-width: 1024px) {
+  .header {
+    padding: 15px 25px;
+  }
+
+  .logo {
+    font-size: 26px;
+  }
+
+  .rocket-img {
+    width: 100px;
+  }
+
+  .main-title {
+    font-size: 28px;
+  }
+
+  .footer {
+    padding: 20px 40px;
+  }
+
+  .footer-links {
+    gap: 25px;
+  }
+}
+
+/* Large screens (above 1440px) — optional upscale */
+@media (min-width: 1440px) {
+  .logo {
+    font-size: 32px;
+  }
+
+  .rocket-img {
+    width: 140px;
+  }
+
+  .main-title {
+    font-size: 36px;
+  }
+
+  .subtitle {
+    font-size: 18px;
+  }
+
+  .footer {
+    padding: 30px 200px;
+  }
 }
