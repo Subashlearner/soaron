@@ -26,6 +26,11 @@
 .logo-highlight {
   color: #b3b3b3;
 }
+.logo-img {
+  height: 50px;   /* adjust as needed */
+  width: 100px;
+  object-fit: contain;
+}
 
 .menu-btn {
   background: none;

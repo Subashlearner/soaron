@@ -7,9 +7,7 @@ export default function ComingSoon() {
     <div className="comingsoon-container">
       {/* Header */}
       <header className="header">
-        <h1 className="logo">
-          soar<span className="logo-highlight">on</span>
-        </h1>
+          <img src="soaron-logo.png" alt="Soaron Logo" className="logo-img" />
         <button className="menu-btn">
           Menu <span className="menu-icon">☰</span>
         </button>
@@ -18,7 +16,7 @@ export default function ComingSoon() {
       {/* Main Content */}
       <main className="main-content">
         <img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRyUoJ34RPWAHd8B7Zo9ogzvb4RkmU1mzuOQ&s"
+          src="rocket.png"
           alt="Rocket"
           className="rocket-img"
         />
