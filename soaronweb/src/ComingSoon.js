@@ -101,7 +101,7 @@ export default function ComingSoon() {
     </div>
 
     <div className="footer-copy">
-      <p className="copyright">Copyright © Soaron All Rights Reserved</p>
+      <p className="copyright">© 2025 Soaron.All Rights Reserved</p>
     </div>
   </div>
 </footer>
