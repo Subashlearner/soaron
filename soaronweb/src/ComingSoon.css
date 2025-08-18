@@ -260,7 +260,7 @@
     text-align: left;
   }
 
-  /* Remove last border line */
+  /* Remove last border line (Patent & Trademark) */
   .footer-links a:last-child {
     border-bottom: none;
   }
@@ -271,11 +271,12 @@
     flex-wrap: wrap;
     gap: 15px;
     justify-content: flex-start;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+    border-top: none; /* ✅ remove the line above Privacy Policy */
   }
 
   .small-links span {
-    display: none; /* remove the dots */
+    display: none; /* remove dots */
   }
 
   /* Footer bottom stacked */
@@ -284,20 +285,21 @@
     align-items: flex-start;
   }
 
-  /* Social icons ABOVE copyright */
+  /* Social icons BELOW Help & Support, ABOVE Copyright */
   .social-icons {
     justify-content: flex-start;
     gap: 16px;
     margin-top: 10px;
-    margin-bottom: 10px; /* give small space before copyright */
-    order: -1; /* ensures they appear above copyright */
+    margin-bottom: 10px;
+    order: 1; /* put after small-links */
   }
 
-  /* Copyright text */
+  /* Copyright always at bottom */
   .copyright {
     font-size: 12px;
     margin-top: 5px;
     text-align: left;
+    order: 2; /* copyright comes last */
   }
 
   /* Main text sizes */
