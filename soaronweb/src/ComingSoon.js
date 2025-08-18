@@ -8,7 +8,7 @@ export default function ComingSoon() {
   return (
     <div className="comingsoon-container">
       {/* Header */}
-          {!menuOpen && (
+      {!menuOpen && (
         <header className="header">
           <img src="soaron-logo.png" alt="Soaron Logo" className="logo-img" />
           <button
@@ -69,6 +69,23 @@ export default function ComingSoon() {
             <a href="/contact">Contact Us</a>
             <a href="/patent-trademark">Patent & Trademark</a>
           </div>
+        </div>
+
+        {/* Bottom Row */}
+        <div className="footer-bottom">
+          <div className="small-links">
+            <a href="/privacy-policy">Privacy Policy</a>
+            <span>•</span>
+            <a href="/terms">Terms & Conditions</a>
+            <span>•</span>
+            <a href="/refund-policy">Refund Policy</a>
+            <span>•</span>
+            <a href="/press">Press or Media</a>
+            <span>•</span>
+            <a href="/help">Help & Support</a>
+          </div>
+
+          {/* Social Icons moved here */}
           <div className="social-icons">
             <a
               href="https://www.youtube.com"
@@ -95,14 +112,12 @@ export default function ComingSoon() {
               aria-label="Twitter"
               className="icon twitter-icon"
             >
-              {/* Inline SVG for X logo */}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 1200 1227"
                 fill="currentColor"
                 width="11"
                 height="11"
-
               >
                 <path d="M714.163 519.284L1160.89 0H1056.1L668.74 450.887L388.508 0H0l466.977 729.032L0 1227h104.782l407.182-478.552L811.492 1227h388.508L714.163 519.284zM562.189 674.546l-47.51-72.34L142.343 91.421h181.239l305.081 464.988l47.51 72.34l389.828 592.661H884.762L562.189 674.546z" />
               </svg>
@@ -116,28 +131,15 @@ export default function ComingSoon() {
             >
               <FaInstagram />
             </a>
-
           </div>
-        </div>
 
-        {/* Bottom Row */}
-        <div className="footer-bottom">
-          <div className="small-links">
-            <a href="/privacy-policy">Privacy Policy</a>
-            <span>•</span>
-            <a href="/terms">Terms & Conditions</a>
-            <span>•</span>
-            <a href="/refund-policy">Refund Policy</a>
-            <span>•</span>
-            <a href="/press">Press or Media</a>
-            <span>•</span>
-            <a href="/help">Help & Support</a>
-          </div>
+          {/* Copyright */}
           <p className="copyright">
             Copyright © Soaron All Rights Reserved
           </p>
         </div>
       </footer>
+
     </div>
   );
 }
