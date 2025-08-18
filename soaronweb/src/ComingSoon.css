@@ -230,52 +230,25 @@
   object-fit: contain;
 }
 
-/* ========== Responsive Styles ========== */
-
-/* Small phones (portrait, under 480px) */
-@media (max-width: 480px) {
-  .header {
-    flex-direction: column;
-    padding: 10px;
-    text-align: center;
-  }
-
-  .logo {
-    font-size: 22px;
-  }
-
-  .menu-btn {
-    margin-top: 6px;
-    font-size: 14px;
-  }
-
-  .rocket-img {
-    width: 80px;
-    margin-bottom: 10px;
-  }
-
-  .main-title {
-    font-size: 22px;
-  }
-
-  .subtitle {
-    font-size: 14px;
-  }
-
+/* Mobile Responsive Fix */
+@media (max-width: 768px) {
+  /* Footer */
   .footer {
-    padding: 15px;
+    padding: 20px; /* reduce side padding */
     text-align: center;
   }
 
   .footer-top {
     flex-direction: column;
-    gap: 10px;
+    gap: 16px;
+    align-items: center;
+    border-bottom: none;
   }
 
   .footer-links {
-    flex-wrap: wrap;
-    gap: 15px;
-    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
   }
 
   .social-icons {
@@ -284,147 +257,12 @@
 
   .footer-bottom {
     flex-direction: column;
-    gap: 8px;
+    gap: 10px;
     text-align: center;
-  }
-}
-
-/* Small tablets & large phones (481px - 768px) */
-@media (max-width: 768px) {
-  .header {
-    padding: 12px 20px;
-  }
-
-  .logo {
-    font-size: 24px;
-  }
-
-  .rocket-img {
-    width: 90px;
-  }
-
-  .main-title {
-    font-size: 26px;
-  }
-
-  .subtitle {
-    font-size: 15px;
-  }
-
-  .footer {
-    padding: 20px;
-  }
-
-  .footer-links {
-    gap: 20px;
-    flex-wrap: wrap;
   }
 
   .small-links {
-    gap: 10px;
     justify-content: center;
-  }
-}
-
-/* Tablets & small laptops (769px - 1024px) */
-@media (max-width: 1024px) {
-  .header {
-    padding: 15px 25px;
-  }
-
-  .logo {
-    font-size: 26px;
-  }
-
-  .rocket-img {
-    width: 100px;
-  }
-
-  .main-title {
-    font-size: 28px;
-  }
-
-  .footer {
-    padding: 20px 40px;
-  }
-
-  .footer-links {
-    gap: 25px;
-  }
-}
-
-/* Large screens (above 1440px) — optional upscale */
-@media (min-width: 1440px) {
-  .logo {
-    font-size: 32px;
-  }
-
-  .rocket-img {
-    width: 140px;
-  }
-
-  .main-title {
-    font-size: 36px;
-  }
-
-  .subtitle {
-    font-size: 18px;
-  }
-
-  .footer {
-    padding: 30px 200px;
-  }
-}
-/* ========== EXTRA RESPONSIVE DESIGN ========== */
-
-/* Very small devices (max 360px) */
-@media (max-width: 360px) {
-  .main-title {
-    font-size: 20px;
-  }
-  .subtitle {
-    font-size: 13px;
-  }
-  .menu-overlay {
-    top: 2%;
-    left: 4%;
-    width: 92%;
-    padding: 10px 20px;
-  }
-}
-
-/* Large tablets (1025px - 1366px) */
-@media (min-width: 1025px) and (max-width: 1366px) {
-  .header {
-    padding: 18px 40px;
-  }
-
-  .main-title {
-    font-size: 30px;
-  }
-
-  .footer {
-    padding: 20px 80px;
-  }
-
-  .footer-links {
-    gap: 35px;
-  }
-}
-
-/* Ultra wide screens (min 1800px) */
-@media (min-width: 1800px) {
-  .main-title {
-    font-size: 42px;
-  }
-  .subtitle {
-    font-size: 20px;
-  }
-  .rocket-img {
-    width: 180px;
-  }
-  .footer {
-    padding: 40px 300px;
-    font-size: 16px;
+    gap: 10px;
   }
 }
