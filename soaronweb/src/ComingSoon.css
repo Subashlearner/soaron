@@ -26,8 +26,9 @@
 .logo-highlight {
   color: #b3b3b3;
 }
+
 .logo-img {
-  height: 50px;   
+  height: 50px;
   width: 100px;
   object-fit: contain;
 }
@@ -71,7 +72,7 @@
 .subtitle {
   color: white;
   font-size: 16px;
-   margin-top: 0; 
+  margin-top: 0;
 }
 
 /* Footer */
@@ -108,8 +109,8 @@
 .social-icons {
   display: flex;
   gap: 10px;
-  align-items: center; 
- 
+  align-items: center;
+
 }
 
 .icon {
@@ -130,32 +131,42 @@
 
 
 .facebook-icon {
-  background-color: #fff;   /* White background */
-  color: #000;              /* Black "f" */
+  background-color: #fff;
+  /* White background */
+  color: #000;
+  /* Black "f" */
   border: 1px solid #000;
-  border-radius: 50%;       /* Circle */
+  border-radius: 50%;
+  /* Circle */
   width: 17px;
   height: 17px;
 
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 14px;          /* Icon size */
+  font-size: 14px;
+  /* Icon size */
   transition: all 0.3s ease;
 }
+
 .linkedin-icon {
-  background-color: #fff;   /* White background */
-  color: #000;              /* Black "in" */
+  background-color: #fff;
+  /* White background */
+  color: #000;
+  /* Black "in" */
   border: 1px solid #000;
-  border-radius: 4px;       /* Curved edges */
+  border-radius: 4px;
+  /* Curved edges */
   width: 16px;
   height: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 14px;          /* Icon size */
+  font-size: 14px;
+  /* Icon size */
   transition: all 0.3s ease;
 }
+
 /* Footer bottom */
 .footer-bottom {
   display: flex;
@@ -183,13 +194,15 @@
 
 .copyright {
   font-size: 13px;
-    color: rgb(196, 190, 190);
-}/* Menu Overlay (White Bar) */
+  color: rgb(196, 190, 190);
+}
+
+/* Menu Overlay (White Bar) */
 .menu-overlay {
   position: fixed;
   top: 3%;
-  left:5%;
-  width: 86%; 
+  left: 5%;
+  width: 86%;
   height: 40px;
   background: #fff;
   color: #000;
@@ -198,7 +211,7 @@
   align-items: center;
   padding: 12px 32px;
   border-radius: 6px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -224,10 +237,13 @@
 /* Right Close Button */
 .menu-close-btn {
   position: absolute;
-  top: 14px;          /* distance from top */
-  right: 20px;        /* distance from right */
+  top: 14px;
+  /* distance from top */
+  right: 20px;
+  /* distance from right */
   background: none;
-  color: #000;        /* black cross */
+  color: #000;
+  /* black cross */
   font-size: 24px;
   font-weight: bold;
   border: none;
@@ -237,12 +253,14 @@
 
 
 .menu-logo img {
- height: 50px;   
+  height: 50px;
   width: 100px;
   object-fit: contain;
 }
+
 /* Mobile Responsive Fix */
 @media (max-width: 768px) {
+
   /* Remove header line */
   .header {
     border-bottom: none;
@@ -259,7 +277,7 @@
   .footer-top {
     flex-direction: column;
     align-items: flex-start;
-    border-bottom: none; 
+    border-bottom: none;
     padding-bottom: 0;
     margin-bottom: 15px;
     gap: 12px;
@@ -297,7 +315,8 @@
   }
 
   .small-links span {
-    display: none; /* remove dots */
+    display: none;
+    /* remove dots */
   }
 
   /* Footer bottom stacked (mobile order) */
@@ -334,5 +353,71 @@
 
   .subtitle {
     font-size: 14px;
+  }
+
+  .menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* full width */
+    height: 100%;
+    /* full height */
+    background: #fff;
+    color: #000;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    overflow-x: hidden;
+    /* prevent horizontal scroll */
+  }
+
+
+  .menu-logo img {
+    height: 50px;
+    width: 120px;
+    object-fit: contain;
+    margin-bottom: 1px;
+  }
+
+  .menu-close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    color: #000;
+    font-size: 28px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+  }
+
+  .menu-links {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 100%;
+    top:auto;
+  }
+
+  .menu-links a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: #000;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+  }
+
+  .menu-links a:last-child {
+    border-bottom: none;
+  }
+
+  .menu-links a:hover {
+    color: #444;
   }
 }
