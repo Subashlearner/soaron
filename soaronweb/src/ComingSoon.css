@@ -243,6 +243,15 @@
     text-align: left;
   }
 
+  /* Remove line above Privacy Policy (footer-top border) */
+  .footer-top {
+    flex-direction: column;
+    align-items: flex-start;
+    border-bottom: none; /* ✅ removed */
+    padding-bottom: 0;
+    margin-bottom: 15px;
+  }
+
   /* Top links (Home, Story, Career...) */
   .footer-links {
     flex-direction: column;
@@ -272,7 +281,6 @@
     gap: 15px;
     justify-content: flex-start;
     margin-bottom: 10px;
-    border-top: none; /* ✅ remove the line above Privacy Policy */
   }
 
   .small-links span {
@@ -285,21 +293,21 @@
     align-items: flex-start;
   }
 
-  /* Social icons BELOW Help & Support, ABOVE Copyright */
+  /* ✅ Social icons BELOW small-links & ABOVE copyright */
   .social-icons {
     justify-content: flex-start;
     gap: 16px;
     margin-top: 10px;
     margin-bottom: 10px;
-    order: 1; /* put after small-links */
+    order: 1;
   }
 
-  /* Copyright always at bottom */
+  /* Copyright always last */
   .copyright {
     font-size: 12px;
     margin-top: 5px;
     text-align: left;
-    order: 2; /* copyright comes last */
+    order: 2;
   }
 
   /* Main text sizes */
