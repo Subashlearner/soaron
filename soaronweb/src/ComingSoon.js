@@ -58,61 +58,53 @@ export default function ComingSoon() {
         <p className="subtitle">Stay tuned for something amazing</p>
       </main>
 
-      {/* Footer */}
-      <footer className="footer">
-        {/* Top Row */}
-        <div className="footer-top">
-          <div className="footer-links">
-            <a href="/">Home</a>
-            <a href="/story">Story</a>
-            <a href="/career">Career</a>
-            <a href="/partner">Partner With Us</a>
-            <a href="/contact">Contact Us</a>
-            <a href="/patent-trademark">Patent & Trademark</a>
-          </div>
+     <footer className="footer">
+  {/* Row 1 */}
+  <div className="footer-top">
+    <div className="footer-links">
+      <a href="/">Home</a>
+      <a href="/story">Story</a>
+      <a href="/career">Career</a>
+      <a href="/partner">Partner With Us</a>
+      <a href="/contact">Contact Us</a>
+      <a href="/patent-trademark">Patent & Trademark</a>
+    </div>
 
-          {/* Social icons (desktop shows here, mobile will move below with CSS) */}
-          <div className="social-icons">
-            {/* Facebook */}
-            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="icon facebook-icon">
-              <FaFacebookF />
-            </a>
-            {/* Instagram */}
-            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="icon instagram-icon">
-              <FaInstagram />
-            </a>
-            {/* Twitter (bird) */}
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter" className="icon twitter-icon">
-              <FaTwitter />
-            </a>
+    <div className="footer-social">
+      <div className="social-icons">
+        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="icon facebook-icon">
+          <FaFacebookF />
+        </a>
+        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="icon instagram-icon">
+          <FaInstagram />
+        </a>
+        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter" className="icon twitter-icon">
+          <FaTwitter />
+        </a>
+        <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="icon linkedin-icon">
+          <FaLinkedinIn />
+        </a>
+      </div>
+    </div>
+  </div>
 
+  {/* Row 2 */}
+  <div className="footer-bottom">
+    <div className="footer-small-links">
+      <div className="small-links">
+        <a href="/privacy-policy">Privacy Policy</a>
+        <a href="/terms">Terms & Conditions</a>
+        <a href="/refund-policy">Refund Policy</a>
+        <a href="/press">Press or Media</a>
+        <a href="/help">Help & Support</a>
+      </div>
+    </div>
 
-
-            {/* LinkedIn */}
-            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="icon linkedin-icon">
-              <FaLinkedinIn />
-            </a>
-          </div>
-        </div>
-
-        {/* Bottom Row */}
-        <div className="footer-bottom">
-          <div className="small-links">
-            <a href="/privacy-policy">Privacy Policy</a>
-          
-            <a href="/terms">Terms & Conditions</a>
-          
-            <a href="/refund-policy">Refund Policy</a>
-           
-            <a href="/press">Press or Media</a>
-           
-            <a href="/help">Help & Support</a>
-          </div>
-
-          <p className="copyright">Copyright © Soaron All Rights Reserved</p>
-        </div>
-      </footer>
-
+    <div className="footer-copy">
+      <p className="copyright">Copyright © Soaron All Rights Reserved</p>
+    </div>
+  </div>
+</footer>
     </div>
   );
 }
