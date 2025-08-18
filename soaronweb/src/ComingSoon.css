@@ -229,7 +229,6 @@
   width: 100px;
   object-fit: contain;
 }
-
 /* Mobile Responsive Fix */
 @media (max-width: 768px) {
   /* Remove header line */
@@ -241,7 +240,7 @@
   .footer {
     border-top: none;
     padding: 20px;
-    text-align: left; /* align everything left */
+    text-align: left;
   }
 
   /* Top links (Home, Story, Career...) */
@@ -249,7 +248,7 @@
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
-    gap: 0; /* no big gaps */
+    gap: 0;
     margin-bottom: 15px;
   }
 
@@ -257,7 +256,7 @@
     display: block;
     width: 100%;
     padding: 10px 0;
-    border-bottom: 1px solid #444; /* thin separator line */
+    border-bottom: 1px solid #444;
     text-align: left;
   }
 
@@ -265,7 +264,7 @@
     border-bottom: none;
   }
 
-  /* Middle row (Privacy Policy, Terms, etc.) */
+  /* Middle row (Privacy, Terms, Refund, etc.) */
   .small-links {
     display: flex;
     flex-wrap: wrap;
@@ -286,10 +285,15 @@
     margin-bottom: 15px;
   }
 
-  /* Copyright smaller */
+  /* Copyright should always go below everything */
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
   .copyright {
     font-size: 12px;
-    margin-top: 5px;
+    margin-top: 10px;
     text-align: left;
   }
 
@@ -302,5 +306,3 @@
     font-size: 14px;
   }
 }
-
-
