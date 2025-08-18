@@ -232,86 +232,68 @@
 
 /* Mobile Responsive Fix */
 @media (max-width: 768px) {
-  /* Footer */
-  .footer {
-    padding: 20px; /* reduce side padding */
-    text-align: center;
-  }
-
-  .footer-top {
-    flex-direction: column;
-    gap: 16px;
-    align-items: center;
-    border-bottom: none;
-  }
-
-  .footer-links {
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
-  }
-
-  .social-icons {
-    justify-content: center;
-  }
-
-  .footer-bottom {
-    flex-direction: column;
-    gap: 10px;
-    text-align: center;
-  }
-
-  .small-links {
-    justify-content: center;
-    gap: 10px;
-  }
-}/* Mobile Specific Fixes */
-@media (max-width: 768px) {
-
-  /* 1. Remove white line below header */
+  /* Remove header line */
   .header {
     border-bottom: none;
   }
 
-  /* 2. Remove extra white line above footer links */
+  /* Footer adjustments */
   .footer {
     border-top: none;
-    padding: 20px; /* reduce left-right padding */
+    padding: 20px;
+    text-align: left; /* align everything left */
   }
 
-  /* 3. Footer links stacked vertically like first image */
+  /* Top links (Home, Story, Career...) */
   .footer-links {
     flex-direction: column;
-    gap: 12px;
-    align-items: flex-start;  /* align left like first image */
+    align-items: flex-start;
     width: 100%;
+    gap: 0; /* no big gaps */
+    margin-bottom: 15px;
   }
 
   .footer-links a {
     display: block;
     width: 100%;
-    padding: 8px 0;
-    border-bottom: 1px solid #444; /* divider lines like first image */
+    padding: 10px 0;
+    border-bottom: 1px solid #444; /* thin separator line */
+    text-align: left;
   }
 
   .footer-links a:last-child {
-    border-bottom: none; /* remove last divider */
+    border-bottom: none;
   }
 
-  /* 4. Center small links below */
+  /* Middle row (Privacy Policy, Terms, etc.) */
   .small-links {
-    justify-content: flex-start;
+    display: flex;
+    flex-wrap: wrap;
     gap: 15px;
+    justify-content: flex-start;
+    margin-bottom: 15px;
   }
 
-  /* 5. Social icons row left aligned */
+  .small-links span {
+    display: none; /* remove the dots */
+  }
+
+  /* Social icons row */
   .social-icons {
     justify-content: flex-start;
     gap: 16px;
     margin-top: 10px;
+    margin-bottom: 15px;
   }
 
-  /* 6. Font sizes closer to first image */
+  /* Copyright smaller */
+  .copyright {
+    font-size: 12px;
+    margin-top: 5px;
+    text-align: left;
+  }
+
+  /* Main text sizes */
   .main-title {
     font-size: 24px;
   }
@@ -320,4 +302,5 @@
     font-size: 14px;
   }
 }
+
 
