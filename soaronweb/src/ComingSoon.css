@@ -330,5 +330,37 @@
   .subtitle {
     font-size: 14px;
   }
+  .footer-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* left align */
+    gap: 12px;
+  }
+
+  /* Move social icons into footer-bottom visually */
+  .footer-top .social-icons {
+    order: 2;                 /* put them after small-links */
+    width: 100%;
+    display: flex;
+    justify-content: flex-start; /* left */
+    margin: 10px 0;
+  }
+
+  /* Reorder footer-bottom items */
+  .footer-bottom .small-links {
+    order: 1;
+    justify-content: flex-start; /* left */
+  }
+
+  .footer-bottom .social-icons {
+    order: 2;
+  }
+
+  .footer-bottom .copyright {
+    order: 3;
+    font-size: 12px;
+    text-align: left;
+    margin-top: 5px;
+  }
 }
 
