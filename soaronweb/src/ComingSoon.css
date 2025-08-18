@@ -276,7 +276,10 @@
   .small-links span {
     display: none; /* remove the dots */
   }
-
+    .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
   /* Social icons row */
   .social-icons {
     justify-content: flex-start;
@@ -286,9 +289,8 @@
   }
 
   /* Copyright should always go below everything */
-  .footer-bottom {
-    flex-direction: column;
-    align-items: flex-start;
+    .footer-links a:last-child {
+    border-bottom: none; /* remove last divider */
   }
 
   .copyright {
