@@ -260,6 +260,7 @@
     text-align: left;
   }
 
+  /* Remove last border line */
   .footer-links a:last-child {
     border-bottom: none;
   }
@@ -276,26 +277,26 @@
   .small-links span {
     display: none; /* remove the dots */
   }
-    .footer-bottom {
+
+  /* Footer bottom stacked */
+  .footer-bottom {
     flex-direction: column;
     align-items: flex-start;
   }
-  /* Social icons row */
+
+  /* Social icons ABOVE copyright */
   .social-icons {
     justify-content: flex-start;
     gap: 16px;
     margin-top: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 10px; /* give small space before copyright */
+    order: -1; /* ensures they appear above copyright */
   }
 
-  /* Copyright should always go below everything */
-    .footer-links a:last-child {
-    border-bottom: none; /* remove last divider */
-  }
-
+  /* Copyright text */
   .copyright {
     font-size: 12px;
-    margin-top: 10px;
+    margin-top: 5px;
     text-align: left;
   }
 
