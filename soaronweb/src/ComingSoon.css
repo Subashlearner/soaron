@@ -360,7 +360,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    /* full width */
+   
     height: 100%;
     /* full height */
     background: #fff;
@@ -369,7 +369,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 30px 20px;
+    padding: 20px 20px 250px 20px; 
     box-sizing: border-box;
     overflow-y: auto;
     overflow-x: hidden;
@@ -381,7 +381,7 @@
     height: 50px;
     width: 120px;
     object-fit: contain;
-    margin-bottom: 1px;
+     margin-bottom: 10px;
   }
 
   .menu-close-btn {
@@ -401,7 +401,7 @@
     flex-direction: column;
     gap: 25px;
     width: 100%;
-    top:auto;
+    
   }
 
   .menu-links a {
