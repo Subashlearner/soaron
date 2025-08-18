@@ -1,17 +1,50 @@
-import React from "react";
+
+import React, { useState } from "react";
 import "./ComingSoon.css";
 import { FaYoutube, FaLinkedinIn, FaInstagram } from "react-icons/fa";
 
 export default function ComingSoon() {
+  const [menuOpen, setMenuOpen] = useState(false);
   return (
     <div className="comingsoon-container">
       {/* Header */}
-      <header className="header">
+          {!menuOpen && (
+        <header className="header">
           <img src="soaron-logo.png" alt="Soaron Logo" className="logo-img" />
-        <button className="menu-btn">
-          Menu <span className="menu-icon">☰</span>
-        </button>
-      </header>
+          <button
+            className="menu-btn"
+            onClick={() => setMenuOpen(true)}
+          >
+            Menu <span className="menu-icon">☰</span>
+          </button>
+        </header>
+      )}
+
+      {menuOpen && (
+        <div className="menu-overlay">
+          <div className="menu-logo">
+            <img src="/soaron-logob.png" alt="Soaron Logo" />
+          </div>
+
+          <nav className="menu-links">
+            <a href="/">Spray</a>
+            <a href="/roller">Roller</a>
+            <a href="/cleanhigh">CleanHigh</a>
+            <a href="/story">Story</a>
+            <a href="/partner">Partner with Us</a>
+          </nav>
+
+          <button
+            className="menu-close-btn"
+            onClick={() => setMenuOpen(false)}
+          >
+            ✕
+          </button>
+        </div>
+
+      )}
+
+
 
       {/* Main Content */}
       <main className="main-content">

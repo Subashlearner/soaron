@@ -13,7 +13,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0px 32px;
+  padding: 10px 32px;
   border-bottom: 1px solid white;
 }
 
@@ -27,7 +27,7 @@
   color: #b3b3b3;
 }
 .logo-img {
-  height: 50px;   /* adjust as needed */
+  height: 50px;   
   width: 100px;
   object-fit: contain;
 }
@@ -172,7 +172,64 @@
 .copyright {
   font-size: 13px;
   color: white;
+}/* Menu Overlay (White Bar) */
+.menu-overlay {
+  position: fixed;
+  top: 3%;
+  left:5%;
+  width: 86%; 
+  height: 40px;
+  background: #fff;
+  color: #000;
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  padding: 12px 32px;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
+
+
+.menu-links {
+  display: flex;
+  gap: 28px;
+  flex: 1;
+  justify-content: center;
+  margin-right: 50%;
+}
+
+.menu-links a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+}
+
+.menu-links a:hover {
+  color: #444;
+}
+
+/* Right Close Button */
+.menu-close-btn {
+  position: absolute;
+  top: 14px;          /* distance from top */
+  right: 20px;        /* distance from right */
+  background: none;
+  color: #000;        /* black cross */
+  font-size: 24px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  z-index: 5000;
+}
+
+
+.menu-logo img {
+ height: 50px;   
+  width: 100px;
+  object-fit: contain;
+}
+
 /* ========== Responsive Styles ========== */
 
 /* Small phones (portrait, under 480px) */
@@ -316,5 +373,58 @@
 
   .footer {
     padding: 30px 200px;
+  }
+}
+/* ========== EXTRA RESPONSIVE DESIGN ========== */
+
+/* Very small devices (max 360px) */
+@media (max-width: 360px) {
+  .main-title {
+    font-size: 20px;
+  }
+  .subtitle {
+    font-size: 13px;
+  }
+  .menu-overlay {
+    top: 2%;
+    left: 4%;
+    width: 92%;
+    padding: 10px 20px;
+  }
+}
+
+/* Large tablets (1025px - 1366px) */
+@media (min-width: 1025px) and (max-width: 1366px) {
+  .header {
+    padding: 18px 40px;
+  }
+
+  .main-title {
+    font-size: 30px;
+  }
+
+  .footer {
+    padding: 20px 80px;
+  }
+
+  .footer-links {
+    gap: 35px;
+  }
+}
+
+/* Ultra wide screens (min 1800px) */
+@media (min-width: 1800px) {
+  .main-title {
+    font-size: 42px;
+  }
+  .subtitle {
+    font-size: 20px;
+  }
+  .rocket-img {
+    width: 180px;
+  }
+  .footer {
+    padding: 40px 300px;
+    font-size: 16px;
   }
 }
