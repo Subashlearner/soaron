@@ -4,6 +4,19 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+// ✅ Kill old service workers and clear caches
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.getRegistrations().then(registrations => {
+    for (let reg of registrations) {
+      reg.unregister();
+      console.log('Service Worker unregistered.');
+    }
+  });
+  caches.keys().then(names => {
+    return Promise.all(names.map(name => caches.delete(name)));
+  });
+}
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
