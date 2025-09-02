@@ -1,3 +1,5 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
-Disallow:
+Allow: /favicon.ico
+Allow: /soaron-favicon-192.png
+Allow: /soaron-favicon-512.png
